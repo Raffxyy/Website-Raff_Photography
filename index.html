@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Raff Photography</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">Raff Photography</td>
+                <td id="navigation">
+                    <a href="#work">Karya Saya</a>
+                    <a href="#bio">Tentang Saya</a>
+                    <a href="#contact">Kontak</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1>Hanya penikmat kereta biasa.</h1>
+                <a href="https://wa.me/6281234567890?text=Halo%20Bang%20,Info Hunting" target="_blank">
+                    <button class="btn_one">Hubungi Saya</button>
+                </a>
+
+                <table>
+                    <tr>
+    <td class="animated zoomIn" style="animation-delay:2.2s;">
+        <a class="social" href="https://wa.me/6283870665255" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </td>
+
+    <td class="animated zoomIn" style="animation-delay:2.4s;">
+        <a class="social" href="https://www.instagram.com/raff_.photography" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </td>
+
+    <td class="animated zoomIn" style="animation-delay:2.6s;">
+        <a class="social" href="https://www.facebook.com/Raff.photography" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+    </td>
+</tr>
+
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    <div id="work">
+        <h1>Karya Saya</h1>
+        <div id="photos">
+            <img src="image/DSC_0040.jpg" onclick="magnify(this.src)">
+            <img src="image/DSC_0083 (1).jpg" onclick="magnify(this.src)">
+            <img src="image/DSC_1080.jpg" onclick="magnify(this.src)">
+            <img src="image/DSC_2365.jpg" onclick="magnify(this.src)">
+            <img src="image/DSC_4434.jpg" onclick="magnify(this.src)">
+            <img src="image/DSC_4510.jpg" onclick="magnify(this.src)">
+            <img src="image/DSC_5375.jpg" onclick="magnify(this.src)">
+            <img src="image/DSC_5464.jpg" onclick="magnify(this.src)">
+            <img src="image/DSC_6181 (1).jpg" onclick="magnify(this.src)">
+            <img src="image/DSC_6993.jpg" onclick="magnify(this.src)">
+            <img src="image/DSC_5195.jpg" onclick="magnify(this.src)">
+            <img src="image/DSC_3895.jpg" onclick="magnify(this.src)">
+            <img src="image/DSC_3974.jpg" onclick="magnify(this.src)">
+        </div>
+    </div>
+    <div id="bio">
+        <h1>Tentang Saya</h1>
+        <p>
+            Saya adalah seorang fotografer kereta sekaligus pencinta dunia perkeretaapian. Ketertarikan saya pada kereta tidak hanya sebatas moda transportasi, tetapi juga sebagai objek visual yang memiliki karakter, kekuatan, dan cerita di setiap perjalanannya.
+            Melalui lensa kamera, saya berusaha menangkap momen terbaik kereta—mulai dari detail lokomotif, dinamika perjalanan, hingga suasana stasiun dan rel yang penuh makna. Bagi saya, setiap kereta yang melintas membawa kisah, dan fotografi adalah cara saya mengabadikan cerita tersebut.
+        <p>
+            Fotografi kereta menjadi wadah bagi saya untuk mengekspresikan kecintaan terhadap teknologi, perjalanan, dan estetika perkeretaapian. Saya terus belajar dan bereksperimen untuk menghasilkan karya yang tidak hanya indah secara visual, tetapi juga mampu menyampaikan emosi dan identitas dunia kereta api.
+        </p>
+    </div>
+    <div id="contact">
+        <h1>Kontak</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +62 838 7066 5255</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; rafieghaus031@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        Adalah Pokoknya,<br>
+                                        Bekaswiss,<br>
+                                        Jowo Borot
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="social" href="https://wa.me/6283870665255" target="_blank">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+
+                                        <a class="social" href="https://www.instagram.com/raff_.photography" target="_blank">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+
+                                        <a class="social" href="https://www.facebook.com/Raff.photography" target="_blank">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <form onsubmit="kirimKeWA(event)">
+    <input type="text" id="nama" placeholder="Nama" required>
+    <input type="email" id="email" placeholder="Email" required><br>
+    <textarea id="pesan" placeholder="Pesan" required rows="5"></textarea><br>
+    <button class="btn_one" type="submit">Kirim</button>
+</form>
+ 
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="footer">
+        ga tau males mau beli truk <br> <a href="https://imfunniee.github.io">Raff Photography</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
